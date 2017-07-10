@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Приближенное вычисление интеграла</title>
+<link href="script/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="script/faviconL.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="script/favicon.ico" type="image/x-icon" />
+<script type="text/javascript" src="script/script.js"></script>
+<script type="text/javascript" src="script/jquery-1.11.1.js"></script>
+</head>
+<body>
+	<form class="main" action="" onsubmit="return false">
+		<br/><h1 class="h1">Приближенное вычисление интеграла<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;вариант 10</h1><br/>
+		<div class="square_left_right">Метод левых и правых квадратов</div>
+		<div class="square_center">Метод средних квадратов</div>
+		<div class="square_trapezoid">Метод трапеций</div>
+		<div class="square_simpson">Метод Симпсона</div><br/><br/><br/><br/>
+		<div id="start" class="input">
+        	<div class="integral">
+            	<input size="30" id="function" type="text" name="function" value="sqrt(0.4*x^2+1.5)/(2.5+sqrt(2*x+0.8))" />
+                <input size="2" id="lin_a" type="text" name="lin_a" value="0.8" />
+                <input size="2" id="lin_b" type="text" name="lin_b" value="2.4" />
+                <br/>
+                <div class="step">
+                	<label for="step">Число шагов интегрирования n = </label>
+                	<input type="text" name="step" id="step" value="10" size="2" />
+                </div>
+            </div>
+            <div id="table1">
+            </div>
+        </div>
+		<div class="input">
+        	<div class="integral">
+            	<input size="30" id="function" type="text" name="function2" value="sqrt(0.4*x^2+1.5)/(2.5+sqrt(2*x+0.8))" />
+                <input size="2" id="lin_a" type="text" name="lin_a2" value="0.8" />
+                <input size="2" id="lin_b" type="text" name="lin_b2" value="2.4" />
+                <br/>
+                <div class="step">
+                	<label for="step">Число шагов интегрирования n = </label>
+                	<input type="text" name="step2" id="step" value="10" size="2" />
+                </div>
+            </div>
+            <div id="table2">
+            </div>
+        </div>
+		<div class="input">
+        	<div class="integral">
+            	<input size="30" id="function" type="text" name="function3" value="cos(x^2 + 0.8)/(1.5 + sin(0.6*x +0.5))" />
+                <input size="2" id="lin_a" type="text" name="lin_a3" value="0.4" />
+                <input size="2" id="lin_b" type="text" name="lin_b3" value="1.2" />
+                <br/>
+                <div class="step">
+                	<label for="step">Число шагов интегрирования n = </label>
+                	<input type="text" name="step3" id="step" value="10" size="2" />
+                </div>
+            </div>
+            <div id="table3">
+            </div>
+        </div>
+		<div class="input">
+        	<div class="integral">
+            	<input size="30" id="function" type="text" name="function4" value="cos(x^2 + 0.8)/(1.5 + sin(0.6*x +0.5))" />
+                <input size="2" id="lin_a" type="text" name="lin_a4" value="0.4" />
+                <input size="2" id="lin_b" type="text" name="lin_b4" value="1.2" />
+                <br/>
+                <div class="step">
+                	<label for="step">Число шагов интегрирования n = </label>
+                	<input type="text" name="step4" id="step" value="10" size="2" />
+                </div>
+            </div>
+             <div id="table4">
+            </div>
+        </div>
+		<button id="button">Вычислить</button>
+    	<br/><br/>
+	<code>&nbsp;&nbsp;&copy; Polishuk. E.A.</code>
+	<br/>
+	<br/>
+	</form>
+    <div id="scrollup">
+		<img src="script/up.png" class="up" alt="Прокрутить вверх" />
+	</div>
+</body>
+</html>

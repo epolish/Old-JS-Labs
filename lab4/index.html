@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Нелинейный уравнения</title>
+<link href="scripts/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="scripts/faviconA.ico" type="image/x-icon">
+<link rel="shortcut icon" href="scripts/faviconA.ico" type="image/x-icon"> 
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/jquery.flot.js"></script>
+<script type="text/javascript" src="scripts/jquery.flot.navigate.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
+</head>
+<body>
+	<div class="invisible"><div id="solution"></div><button id="button2" >Закрыть</button></div>
+	<form class="main" action="" onsubmit="return false">
+		<br/><h1>Нелинейный уравнения - вариант 10</h1><br/>
+		<div id="input" class="input">
+		<h2>Функция</h2><br/><input size="30" id="function" type="text" name="function" value="x*x+4*sin(x)" />
+		<br/>		<br/>		
+		<h2>Производная</h2><br/><input size="30" id="derivative" type="text" name="derivative" value="2*x+4*cos(x)" />
+		</div>
+		<button id="button">Вычислить</button>
+        <div id="placeholder" style="width:500px;height:300px;"></div>
+        <p id="hoverdata"><span id="x">Координаты мыши - 0</span>, <span id="y">0</span><span id="clickdata"></span></p>
+    	<br/><br/><br/><br/>
+		<code>&nbsp;&nbsp;&copy; Polishuk. E.A.</code>
+		<br/>
+		<br/>	
+	</form>
+</body>
+</html>
+<!--
+	1.) x*x + 4*sin(x) = 0; -> 2*x+4*cos(x)
+	2.) x*x*x - 3*x*x + 12*x - 9 = 0; -> 3*x*x - 6*x + 12
+-->

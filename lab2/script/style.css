@@ -1,0 +1,204 @@
+@charset "utf-8";
+	*	{
+	margin:0;
+	padding:0;
+	}
+    body, html	{
+	width: 100%;
+	height: 100%;
+	}
+    body	{
+	background:#CCC;
+	}
+	.main	{
+	box-shadow: 0px 6px 9px #000000;
+	border-radius:30px;
+	background:#EDFBFC;
+ 	background: linear-gradient(to top, #CCC, #FFF);
+	margin:80px auto;
+	position:relative;
+	display:block;
+	width:800px;
+	}
+	.input	{
+	margin:45px;
+	text-align:center;
+	position:relative;
+	display:none;
+	width:600px;
+	min-height:200px;
+	float:left;
+	}
+	h1	{
+	margin-left:190px;
+	}
+	h2	{
+	margin-left:200px;
+	}
+	#x	{
+	margin-left:310px;
+	}
+	#label_x	{
+	margin-left:390px;
+	font-weight:bold;
+	font-size:20px;
+	}
+	#placeholder {
+		display:none;
+		margin-left:150px;
+	}
+	#hoverdata {
+		display:none;
+		margin-left:-137px;
+	}
+	#button {
+	margin-left:340px;
+	width:112px;
+	height:35px;
+    position: relative;
+    display: inline-block;
+    font-size: 90%;
+    font-weight: 700;
+    color: rgb(209,209,217);
+    text-decoration: none;
+    text-shadow: 0 -1px 2px rgba(0,0,0,.2);
+    padding: .5em 1em;
+    outline: none;
+    border-radius: 3px;
+    background: linear-gradient(rgb(110,112,120), rgb(81,81,86)) rgb(110,112,120);
+    box-shadow:
+    0 1px rgba(255,255,255,.2) inset,
+    0 3px 5px rgba(0,1,6,.5),
+    0 0 1px 1px rgba(0,1,6,.2);
+    transition: .2s ease-in-out;
+	}
+	#button:hover:not(:active) {
+  	background: linear-gradient(rgb(126,126,134), rgb(70,71,76)) rgb(126,126,134);
+	}
+	#button:active {
+  	top: 1px;
+  	background: linear-gradient(rgb(76,77,82), rgb(56,57,62)) rgb(76,77,82);
+  	box-shadow:
+   	0 0 1px rgba(0,0,0,.5) inset,
+    0 2px 3px rgba(0,0,0,.5) inset,
+    0 1px 1px rgba(255,255,255,.1);
+	}
+	.h1	{
+	margin-left:140px;
+	}
+	.h2	{
+	margin-left:250px;
+	}
+	a {
+    color: black; /* Цвет ссылок */
+    }
+    a:hover {
+	text-decoration:none;
+    color: #666; /* Цвет посещенных ссылок */
+    }
+    a:active {
+	text-decoration:underline;
+    color: black; /* Цвет активных ссылок */
+    }
+	.square_left_right, .square_center, .square_trapezoid, .square_simpson {
+		border-radius:5px;
+		color: #CCC;
+		padding:5px;
+		text-align: center;
+		width:150px;
+		height:35px;
+		position:relative;
+		background:#333333;
+		float:left;
+		margin-left:32px;
+		transition: .1s ease-in-out;
+		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+	.square_left_right:hover, .square_center:hover, .square_trapezoid:hover, .square_simpson:hover {
+		cursor:pointer;
+		color:#333;
+		background: #CCC;
+		transition: .1s ease-in-out;
+		transform:scale(0.95,0.95);
+	}
+	.square_left_right:active, .square_center:active, .square_trapezoid:active, .square_simpson:active {
+		transform:scale(0.9,0.9);
+		transition: .1s ease-in-out;
+	}
+	.square_left_right{
+		color:#333;
+		background: #CCC;
+	}
+	#start {
+		display: block;
+	}
+	.integral
+	{
+		position:absolute;
+		width:550px;
+		height:250px;
+		background:url(integral.gif);
+		background-repeat:no-repeat;
+	}
+	#function 
+	{
+		text-align:center;
+		position:absolute;
+		display:block;
+		margin-top:65px;
+		margin-left:98px;
+	}
+	#lin_a, #lin_b
+	{
+		text-align:center;
+		position:absolute;
+		display:block;
+	}
+	#lin_a 
+	{
+		margin-top:5px;
+		margin-left:20px;
+	}
+	#lin_b 
+	{
+		margin-top:120px;
+		margin-left:20px;
+	}
+	.step
+	{
+		position:absolute;
+		margin-left:20px;
+		margin-top:150px;
+	}
+	#step
+	{
+		text-align:center;
+	}
+	#scrollup {
+	-webkit-box-shadow: 0px 6px 9px #000000;
+	-moz-box-shadow: 0px 2px 3px #000000;
+	position: fixed; /* фиксированная позиция */
+	opacity: 0.8; /* прозрачность */
+	padding: 15px 10px 10px; /* отступы */
+	background: #aaa;
+	border-radius: 5px; /* скругление углов */
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	left: 10px; /* отступ слева */
+	bottom: 10px; /* отступ снизу */
+	display: none; /* спрятать блок */
+	cursor: pointer;
+	z-index:4;
+	}
+	#table1,#table2,#table3,#table4  {
+		display:none;
+		margin-left:180px;
+		margin-top:200px;
+		position: relative;
+		min-height:300px;
+		}
+	td
+	{
+		padding:10px;
+		border:2px solid;
+	}

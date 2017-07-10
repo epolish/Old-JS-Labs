@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Аппроксимация</title>
+<link href="scripts/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="scripts/faviconA.ico" type="image/x-icon">
+<link rel="shortcut icon" href="scripts/faviconA.ico" type="image/x-icon"> 
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/jquery.flot.js"></script>
+<script type="text/javascript" src="scripts/jquery.flot.navigate.js"></script>
+<script type="text/javascript" src="scripts/math.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
+</head>
+<body>
+	<form class="main" action="" onsubmit="return false">
+		<br/><h1>Аппроксимация - вариант 10</h1><br/>
+		<div id="input_x" class="input_x">
+			<label for="x1">X(1)</label>
+			<input size="5" id="x1" class="input" type="text" name="val_x" value="-5"/><br/>
+    		<label for="x2">X(2)</label>
+   			<input size="5" id="x2" class="input" type="text" name="val_x" value="-4"/><br/>
+    		<label for="x3">X(3)</label>
+    		<input size="5" id="x3" class="input" type="text" name="val_x" value="-3"/><br/>
+    		<label for="x4">X(4)</label>
+    		<input size="5" id="x4" class="input" type="text" name="val_x" value="2"/><br/>
+    		<label for="x5">X(5)</label>
+    		<input size="5" id="x5" class="input" type="text" name="val_x" value="3"/><br/>
+    		<label for="x6">X(6)</label>
+    		<input size="5" id="x6" class="input" type="text" name="val_x" value="4"/><br/>
+    	</div>
+    	<div class="input_y">
+			<label for="y1">Y(1)</label>
+			<input size="5" id="y1" class="input" type="text" name="val_y" value="-5.6"/><br/>
+    		<label for="y2">Y(2)</label>
+   			<input size="5" id="y2" class="input" type="text" name="val_y" value="-1.2"/><br/>
+    		<label for="y3">Y(3)</label>
+    		<input size="5" id="y3" class="input" type="text" name="val_y" value="2.1"/><br/>
+    		<label for="y4">Y(4)</label>
+    		<input size="5" id="y4" class="input" type="text" name="val_y" value="-12.7"/><br/>
+    		<label for="y5">Y(5)</label>
+    		<input size="5" id="y5" class="input" type="text" name="val_y" value="-21.7"/><br/>
+    		<label for="y6">Y(6)</label>
+    		<input size="5" id="y6" class="input" type="text" name="val_y" value="-33.1"/><br/>
+		</div>
+		<button id="button">Вычислить</button>
+        <div id="placeholder" style="width:500px;height:300px;"></div>
+        <p id="hoverdata"><span id="x">Координаты мыши - 0</span>, <span id="y">0</span><span id="clickdata"></span></p>
+    	<br/><br/><br/><h2>Ответ: ...</h2><br/><h2><a href="lin_inter.html">Задание на линейную интерполяцию</a></h2><br/><br/>
+		<code>&nbsp;&nbsp;&copy; Polishuk. E.A.</code>
+		<br/>
+		<br/>	
+	</form>
+</body>
+</html>
+<!-- quadratic fit {-5,-5.6},{-4,-1.2},{-3,2.1},{2,-12.7},{3,-21.7},{4,-33.1} -->

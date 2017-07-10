@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Обычные дифференциальные уравнения</title>
+<link href="script/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="script/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="script/favicon.ico" type="image/x-icon" />
+<script type="text/javascript" src="script/script.js"></script>
+<script type="text/javascript" src="script/jquery-1.11.1.js"></script>
+</head>
+<body>
+	<form class="main" action="" onsubmit="return false">
+		<br/>
+        <h1 class="h1">
+        	Обычные дифференциальные уравнения
+            <br/>
+        	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;вариант 10
+        </h1>
+		<div id="input">
+			<h2>Функция</h2>
+			<br/>
+			<input size="30" class="id_input" id="function" type="text" name="function" value="x+cos(y/sqrt(11))" />
+		</div>
+		<div id="input2">
+			<div class="content">
+				<h4>Колличество шагов</h4>
+				<input size="5" class="input_form" id="size" type="text" name="size" value="10" />
+			</div>
+			<div class="content">
+				<h4> &nbsp;  &nbsp;  Длинна шага</h4>
+				<input size="5" class="input_form" id="step" type="text" name="step" value="0.1" />
+			</div>
+			<div class="content">
+				<h4>Начальное условие х</h4>
+				<input size="5" class="input_form" id="begg_x" type="text" name="begg_x" value="2.1" />
+			</div>
+			<div class="content">
+				<h4>Начальное условие y(х)</h4>
+				<input size="5" class="input_form" id="begg_y" type="text" name="begg_y" value="2.5" />
+			</div>
+       </div>
+        <div id="rez"></div>
+        <div id="rez2"></div>
+		<button id="button">Вычислить</button>
+    	<br/>
+        <br/>
+		<code>&nbsp;&nbsp;&copy; Polishuk. E.A.</code>
+		<br/>
+		<br/>
+	</form>
+    <div id="scrollup">
+		<img src="script/up.png" class="up" alt="Прокрутить вверх" />
+	</div>
+</body>
+</html>
+<!-- 
+	1.) x(2.1), y(2.5),  h(0.1) ; x+cos(y/sqrt(11))
+	2.) x(0.2), y(0.25), h(0.1) ; 0.127*(x*x+cos(0.6*x))+0.573*y
+-->
