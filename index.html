@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Построение графиков функций</title>
+		<script type="text/javascript" src="chart.js"></script>
+		<script type="text/javascript">
+			//javascript:alert(('cos(x)').replace(/([a-z]{2,}).*?/gi, 'Math.$1'););
+			colors = ['maroon','green','olive','navy','purple','teal'];
+			
+			// Инициализация параметров
+			function chartInit() {
+				var func   = document.getElementsByName('func')[0];
+				var color  = document.getElementsByName('color')[0];
+				var canvas = document.getElementById('chart');
+				func.value = '';
+				func.focus();
+				color.value = colors[0];
+				color.style.color = colors[0];
+				Chart.drawAxis(canvas);
+				funcCount = 0;
+			}
+			
+			// Отображение графика
+			function draw(form) {
+				var func  = form.func.value;
+				var color = form.color.value;
+				if ( func != '' ) {
+					var context = Chart.context;
+					context.font = 'normal 10pt Courier';
+					context.strokeStyle = color;
+					funcCount++;
+					//context.strokeText(funcCount + '. f(x)=' + func, 0, funcCount * 12);
+					Chart.drawChart(func, color);
+					form.color.value = colors[funcCount % colors.length];
+					form.color.style.color = colors[funcCount % colors.length];
+				} else alert('Не введена функция');
+				form.func.value = '';
+				form.func.focus();
+				return false;
+			}
+		</script>
+	</head>
+	<body onload="chartInit()">
+	<div style=" width:900px; height: 500px; margin: 0 auto;">
+		<form onsubmit="return draw(this)">
+			f(x) = <input type="text" name="func" size="24">
+			<select name="color" style="display:none; font-weight: bold" onchange="this.style.color = this.value">
+				<option value="maroon" style="color: maroon">Красный</option>
+				<option value="green" style="color: green">Зеленый</option>
+				<option value="olive" style="color: olive">Желтый</option>
+				<option value="navy" style="color: navy">Синий</option>
+				<option value="purple" style="color: purple">Фиолетовый</option>
+				<option value="teal" style="color: teal">Голубой</option>
+			</select>
+			<input type="submit" value="Построить">
+			<input type="button" value="Очистить" onclick="if ( confirm('Очистить?') ) chartInit()">
+		</form>
+		<br>
+		<canvas style=" border: 1px solid;" id="chart" width="800" height="480">HTML5 не поддерживается</canvas>
+		</div>
+	</body>
+</html>
